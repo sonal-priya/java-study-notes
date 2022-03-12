@@ -1,0 +1,47 @@
+Any computer program has an overall structure and semantics. 
+Structure - the arrangement of the program (what should come first, how to write certain things, the rules, syntax, grammar, etc).
+Semantics- what do the various components of the program mean, why are they written there in the first place, etc.
+
+Features of Java :
+? Simple - Java removes the ambiguity by disabling the use of pointers.
+? Portable - Compiled bytecode can be run on any platform
+? Object-oriented - although it uses primitive data types, but supports conversion into non-primitives by using Wrapper Classes
+? Independent of the host platform - because of bytecode
+? Dynamic and secure
+? Robust - strong memory management, which helps to eliminate errors during compile time and run time.
+? Supports libraries for networking
+? High Performance: With the use of JIT (Just-In-Time) compilers, Java achieves high performance through the use of byte-code that can be easily translated into native machine code.
+? Supports Multithreading.
+
+Some Good Practices while writing Java programs -
+? Maintain modularity - write separate methods for each functionality and maintain documentation (comments) of what this does
+? Coding style - Proper indentations, blank lines between methods, blank spaces between operators.
+
+System.out.println() -
+System.out is also the name of an object: the main printed output device for your program. So System.out.println calls the method println on the System.out object.
+
+Casting / Typecasting -
+Basically, if a smaller precision needs to be converted to bigger precision, explicit typecasting is required, and vice-versa.
+int to double - explicitly
+double to int - implicitly 
+
+Syntax for typecasting - 
+(datatype) <value to be casted> 
+E.g, (double) 5 = 5.0
+Arrays :
+? Cannot be resized once created
+? The type of variables to be stored has to be pre-defined.
+? Length of an array using myArray.length instance variable.
+? Initialization :
+? int myArray[size];
+? int myArray = new int[size];
+? int myArray =  {1,2,3}
+
+? Arrays are also built-in, and can be used by importing java.utils.Arrays.
+
+Foreach loops:
+Comes in handy when you don’t have to work with array indexes.
+Syntax : for( int x : myArray){
+			//perform some operations on x
+			// x contains a copy of the array values.
+		}

@@ -1,0 +1,48 @@
+Classes and Objects-
+All objects have some state and behavior.
+The definition is present in the class. Objects are instances of the class.
+
+Access Modifiers-
+Private - cannot be accessed directly from outside the class.
+Public - can be accessed from outside the class
+Protected - cannot be accessed from a different package, but can be accessed by an inherited class.
+Default - if nothing is specified.
+
+
+Polymorphism -
+In Java, polymorphism is obtained at the method level using two concepts-
+Method overloading
+Method overriding
+
+Method overloading -
+This is done at compile time. In this concept, a method of a class can be written in two different ways by changing the number and type of parameters it takes and changing the return type.
+Overloading - compile-time - params list ( type, number, order)
+
+
+Method overriding -
+The derived class inherits the base class method and can add its own implementation, keeping the method definition the same. No change in the params list and return type allowed. Run time polymorphism
+Overriding - run-time - method body
+
+? Why can’t a method be overloaded/overridden based on its return type?
+Because compilers can’t tell which method to call. For example -
+Public int add( int a, int b) {}
+Public double add ( int a, int b) {} // this gives compile time error, method add(int, int) is already defined.
+
+Constructors-
+Constructor are methods with same name as class name and no return type. Default constructors are implicitly added by JVM and set the default values of data members to null or 0.
+
+When a parameterized constructor is provided, default constructor has to be provided explicitly.
+
+Inheritance-
+Derived class can access all the non-private fields (variables and methods) of the base class. An example of IS A relationship between objects. 
+
+Classes declared as final cannot be inherited.
+
+When we create an object of the sub class, at the same time, object of super class is also created.
+
+class Vehicle{}
+
+class Car extends Vehicle{}
+
+
+Abstraction-
